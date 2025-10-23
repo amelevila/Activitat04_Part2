@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activitat04Part2</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="height">Height</string>
+    <string name="_50_cm">50 cm</string>
+    <string name="weight">Weight</string>
+    <string name="_70_kg">70 kg</string>
+    <string name="bmi_calculator">BMI CALCULATOR</string>
+</resources>
