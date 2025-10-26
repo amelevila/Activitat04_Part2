@@ -127,10 +127,10 @@
                 android:id="@+id/tvHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_50_cm"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="50 cm" />
 
             <com.google.android.material.slider.RangeSlider
                 android:id="@+id/rsHeight"
@@ -149,7 +149,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/viewWeight"
         android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_height="150dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@color/background_component"
@@ -175,10 +175,10 @@
                 android:id="@+id/tvWeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_70_kg"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="70 kg" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -193,14 +193,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:backgroundTint="@color/background_button"
-                    android:src="@drawable/ic_minus" />
+                    android:src="@drawable/ic_minus"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusWeight"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/background_button"
-                    android:src="@drawable/ic_plus" />
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -213,7 +215,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/viewAge"
         android:layout_width="0dp"
-        android:layout_height="170dp"
+        android:layout_height="150dp"
         android:layout_marginTop="32dp"
         app:cardBackgroundColor="@color/background_component"
         app:cardCornerRadius="16dp"
@@ -238,10 +240,10 @@
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_18"
                 android:textColor="@color/white"
                 android:textSize="38sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="18" />
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
@@ -256,14 +258,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
                     android:backgroundTint="@color/background_button"
-                    android:src="@drawable/ic_minus" />
+                    android:src="@drawable/ic_minus"
+                    app:tint="@color/white" />
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
                     android:id="@+id/btnPlusAge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/background_button"
-                    android:src="@drawable/ic_plus" />
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/white" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -272,31 +276,19 @@
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
+    <!-- Calculate -->
+    <Button
+        android:id="@+id/btnCalculate"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
+        android:text="@string/calculate"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:cardBackgroundColor="@color/background_calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:cardBackgroundColor="@color/background_calculate">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/calculate"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                android:textAllCaps="true"
-                android:textSize="30sp"
-                android:background="@color/background_calculate"/>
-
-        </androidx.appcompat.widget.LinearLayoutCompat>
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintStart_toStartOf="parent">
+    </Button>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
